@@ -1,0 +1,23 @@
+public class Percolation {
+   public Percolation(int N)               // create N-by-N grid, with all sites blocked
+       boolean[][] grid = new boolean[N+1][N+1];
+   
+   public void open(int i, int j) {          // open site (row i, column j) if it is not open already
+       grid[i][j] = true;
+   }
+   
+   public boolean isOpen(int i, int j) {     // is site (row i, column j) open?
+       if(grid[i][j]) {
+           return true;
+       }else {
+           return false;
+       }
+   }
+   
+   public boolean isFull(int i, int j) {     // is site (row i, column j) full?
+       
+   }
+   public boolean percolates()             // does the system percolate?
+
+   public static void main(String[] args   // test client (optional)
+}
